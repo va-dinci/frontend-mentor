@@ -23,8 +23,12 @@ html {
 }
 
 body {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-family: "Outfit", sans-serif;
+  background-color: hsl(212, 45%, 89%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .attribution {
@@ -33,4 +37,31 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.card {
+  border: 1px solid black;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  max-width: 37.5rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  grid-area: 2/2/3/3;
+}
+
+#qr-code {
+  border-radius: 1rem;
+}
+
+.p-header {
+  font-size: 2.3rem;
+  font-weight: 700;
+  padding: 2rem;
+}
+
+.p-paragraph {
+  color: hsl(220, 15%, 55%);
+  padding: 1.5rem;
+  font-size: 1.6rem;
 }
